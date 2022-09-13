@@ -57,6 +57,7 @@
     margin-top: 175px;
 }
 .socials{
+    margin-top: 40px;
     width: 62px;
     a {
     display: block;
@@ -88,4 +89,45 @@
             @include line;
         }
     }
+}
+.home_btns{
+    margin-bottom: 80px;
+    a{
+        display: inline-block;
+        width: 200px;
+        height: 60px;
+        line-height: 60px;
+        color: $white;
+        border-radius: 5px;
+        font-size: 12px;
+        font-weight: 700;
+        transition: .3s;
+        text-transform: uppercase;
+        border: 1px solid $white-oacity;
+        margin:0 20px 20px;
+        &:hover{
+            background: $color_yel;
+        }
+    }
+    .btn_order{
+        background: $color_yel;
+        border: none;
+        &:hover{
+            background: darken($color_yel, 10%);
+        }
+    }
+}
+.arrow_about{
+    display: block;
+    width: 62px;
+    height: 62px;
+    margin: $marginc;
+}
+.time_work{
+    color: $white;
+    font-weight: 700;
+    font-size: 12px;
+    transform: rotate(-90deg);
+    margin-top: 130px;
+    margin-left: -75px;
 }
