@@ -1,7 +1,42 @@
-$color_yel: yellow; 
 $kurale: 'Kurale', serif;
-$os: 'Open Sans', sans-serif;  
+$os: 'Open Sans', sans-serif; 
+$text: 18px; 
+$white: #fff;
+$color_yel: yellow; 
+$color: #000;
+$wrap: 1470px;
+$container: 1200px;
+$marginc: 0 auto;
+
+@mixin flex($jc, $ai) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $jc;
+    align-items: $ai;
+}
+@mixin line {
+    content:"";
+    display: block;
+    width: 60px;
+    height: 5px;
+    background: $color_yel;
+    border-radius: 25px;
+    margin:10px auto 25px auto;
+
+
+}
 body{
-    background: black;
+    background: $white;
     font-family: $os;
+    color: $color;
+    font-size: $text;
+}
+.wrapper{
+    max-width: $wrap;
+    margin: $marginc;
+    padding: 0 15px;
+}
+.container{
+    max-width: $container;
+    margin: $marginc;
 }
