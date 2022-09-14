@@ -1,0 +1,51 @@
+.team{
+    position: relative;
+    background: url(../img/team-bg.jpg) center/cover no-repeat;
+    padding: 40px 0 125px 0;
+    // z-index: 1;
+    &::after{
+        content: "";
+        position: absolute;
+        top:0;
+        left: 0;
+        background: rgba($color: #000000, $alpha: .5);
+        width: 100%;
+        height: 100%;
+        // z-index: 1;
+    }
+    
+    h6{
+        text-align: center;
+        color: $white;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 12px;
+        letter-spacing: .5em;
+        position: relative;
+        z-index: 3;
+    }
+}
+.team_container{
+    @include flex(space-between, center);
+    margin-top: 50px;
+}
+.team_text{
+    width: 50%;
+    max-width: 600px;
+    text-align: center;
+    color: $white;
+    z-index: 50;
+}
+.team_img{
+    z-index: 3;
+    width: 50%;
+    max-width: 500px;
+    position: relative;
+    .circle{
+        left: 0;
+        transform: translate(-40%, -50%);
+    }
+    img{
+        @include img;
+    }
+}
