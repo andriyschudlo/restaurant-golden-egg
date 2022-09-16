@@ -2,10 +2,12 @@ $kurale: 'Kurale', serif;
 $os: 'Open Sans', sans-serif; 
 $text: 18px; 
 $white: #fff;
-$color_yel: yellow; 
+$color_yel: rgb(247, 227, 102); 
 $color: #000;
 $white-oacity: rgba(255,255,255,.5);
 $black-oacity: rgba(0,0,0,.5);
+$gray:lightgray;
+$gray-opacity: rgba(51, 51, 51, 0.5);
 $wrap: 1440px;
 $container: 1230px;
 $marginc: 0 auto;
@@ -51,6 +53,8 @@ body{
 svg{
     height: 100%;
     width: 100%;
+    stroke: none; 
+    fill: none;
 }
 .circle{
     width: 250px;
@@ -75,4 +79,7 @@ section p{
 }
 .intro{
     font-weight: 700;
+}
+h2{
+    text-transform:capitalize;
 }

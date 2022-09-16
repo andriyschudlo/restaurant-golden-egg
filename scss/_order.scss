@@ -1,0 +1,79 @@
+.order{
+    padding: 100px 0 45px;
+}
+.order_container{
+    @include flex(space-between, center);
+}
+.order_text{
+    width: 50%;
+    max-width: 565px;
+    text-align: center;
+}
+.order_form{
+    @include flex (space-between, center);
+    input{
+        width: calc(50% - 5px);
+        margin-bottom: 10px;
+        border-radius: 5px;
+        background: $gray;
+        border: 1px solid transparent;
+        outline: none;
+        padding: 0 20px;
+        height: 60px;
+        font-size: 14;
+        &::placeholder{
+            color: $gray-opacity;
+        }
+        &:focus{
+            border: 1px solid $color_yel;
+
+        }
+    }
+    .order_select{
+        width: calc(50% - 5px);
+        margin-bottom: 10px;
+        position: relative;
+        &::after{
+            content: "";
+            width: 20px;
+            height: 20px;
+            background: url(../img/select-arrow.svg) center no-repeat ;
+            position: absolute;
+            right: 10px;
+            top: calc(50% - 10px);
+            pointer-events: none;
+        }
+        select{
+            width: 100%;
+            background: $gray;
+            border: 1px solid transparent;
+            height: 60px;
+            padding: 0 20px;
+            font-size: 14px;
+            outline: none;
+            border-radius: 5px;
+            appearance: none;
+            -webkit-appearance: none;
+            &:not(:valid){
+                color: $gray-opacity;
+            }
+        }
+        option{
+            color: $color;
+        }
+    }
+    button{
+        width: 100%;
+        background: $color_yel;
+        border: none;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 12;
+        color: $white;
+        height: 60px;
+        text-transform: uppercase;
+        &:hover{
+            background: darken($color_yel, 10%);
+        }
+    }
+}
