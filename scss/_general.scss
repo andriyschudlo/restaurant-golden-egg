@@ -28,8 +28,8 @@ $marginc: 0 auto;
     margin:10px auto 25px auto;
 }
 @mixin img {
-    width: 100;
-    height: auto;
+    width: 100%;
+    height: 100%;
     filter: drop-shadow(0px 0px 50px $black-oacity);
     border-radius: 5px;
 }

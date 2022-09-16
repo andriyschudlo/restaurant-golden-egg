@@ -75,5 +75,29 @@
         &:hover{
             background: darken($color_yel, 10%);
         }
+        transition: .5s;
+    }
+}
+.order_img{
+    width: 50%;
+    max-width: 500px;
+    position: relative;
+    .circle{
+        right: 0;
+        transform: translate(40%, -50%);
+    }
+    img{
+        @include img;
+    }
+}
+.order_contacts{
+    font-size: 12px;
+    line-height: 12px;
+    color: $gray-opacity;
+    text-align: center;
+    padding-top: 45px;
+    a{
+        color: $gray-opacity;
+        font-weight: 700;
     }
 }
