@@ -1,6 +1,6 @@
 .spec_container{
  position: relative;
- z-index: 20;
+ // z-index: 20;
   h6{
   color: $white;
   letter-spacing: .5em;
@@ -17,6 +17,7 @@
  position: relative;
  z-index: 1;
  background: url(../img/bg_slide.jpg) center/cover no-repeat;
+ height: 100%;
  padding: 105px 0 95px;
 }
 .spec_slide-container{
@@ -52,7 +53,7 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: $white-oacity;
+  background: white;
   cursor: pointer;
   margin: 0 10px;
   transition: .5s;
@@ -60,8 +61,9 @@
    background: $white;
    opacity: 1;
   }
-  // .active{
-  //  background: $white;
-  // } 
+  
+ }
+ .bullet-active{
+  background: white;
  }
 }
