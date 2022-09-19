@@ -1,0 +1,44 @@
+.spec_container{
+ position: relative;
+ z-index: 20;
+  h6{
+  color: $white;
+  letter-spacing: .5em;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  top: 45px;
+ }
+}
+.spec_slide{
+ position: relative;
+ z-index: 1;
+ background: url(../img/bg_slide.jpg) center/cover no-repeat;
+ padding: 105px 0 95px;
+}
+.spec_slide-container{
+ @include flex(space-around, center);
+}
+.spec_text{
+ color: $white;
+ text-align: center;
+ max-width: 600px;
+ padding-left: 30px;
+}
+.spec_img{
+ // width: 50%;
+ max-width: 500px;
+ position: relative;
+ text-align: right;
+ .circle{
+  position: absolute;
+  left: 30px;
+  transform: translate(-40%, -50%);
+ }
+ img{
+  @include img;
+ }
+}

@@ -1,153 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Golden Egg</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kurale&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="/css/style.min.css">
-    <!-- <link rel="stylesheet" href="file:///Users/Andrey/Landing_study/css/style.min.css"> -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Golden Egg</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Open+Sans:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.min.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
 </head>
+
 <body>
-    <div class="wrapper">
+  <div class="wrapper">
     <section class="home">
-        <img src="img/dish.jpg" class="home_img" alt="">
-        <!-- <video src="img/Roast - 11620.mp4" class="home_video" autoplay loop muted></video> -->
-        <div class="home_container">
-            <div class="container">
-                <nav class="top-menu">
-                    <ul class="top-menu__list">
-                        <li class="top-menu_item"><a href="#about">About</a></li>
-                        <li class="top-menu_item"><a href="#team">Team</a></li>
-                        <li class="top-menu_item"><a href="#order">Order</a></li>
-                        <li class="logo"><img src="img/logo.png"/></li>
-                        <li class="top-menu_item"><a href="menu">Menu</a></li>
-                        <li class="top-menu_item"><a href="events">Events</a></li>
-                        <li class="top-menu_item"><a href="contacts">Contacts</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="container home_container-center">
-                <div class="time_work">Пн - Пт: 8 - 22, Сб - Вс: 9 - 24</div>
-                <div class="home_text">
-                    <h6>RESTORANT</h6>
-                    <h1>GOLDEN EGG</h1>
-                    <div class="home_btns">
-                        <a href="#order" class="btn_order">Order</a>
-                        <a href="#about">About</a>
-                    </div>
-                    <a href="#about " class="arrow_about">
-                        <svg>
-                            <use xlink:href="img/sprite-icons.svg#arrow"></use>
-                        </svg>
-                    </a>
-                </div>
-                <div class="socials">
-                    <a href="#" target="_blank">
-                        <svg>
-                            <use xlink:href="img/sprite-icons.svg#facebook"></use>
-                        </svg>
-                    </a>
-                    <a href="#" target="_blank">
-                        <svg>
-                            <use xlink:href="img/sprite-icons.svg#twitter"></use>
-                        </svg>
-                    </a>
-                    <a href="#" target="_blank">
-                        <svg>
-                            <use xlink:href="img/sprite-icons.svg#instagramm"></use>
-                        </svg>
-                    </a> 
-                </div>
-            </div>
+      <img src="img/dish.jpg" class="home_img" alt="" />
+      <!-- <video src="img/Roast - 11620.mp4" class="home_video" autoplay loop muted></video> -->
+      <div class="home_container">
+        <div class="container">
+          <nav class="top-menu">
+            <ul class="top-menu__list">
+              <li class="top-menu_item"><a href="#about">About</a></li>
+              <li class="top-menu_item"><a href="#team">Team</a></li>
+              <li class="top-menu_item"><a href="#order">Order</a></li>
+              <li class="logo"><img src="img/logo.png" /></li>
+              <li class="top-menu_item"><a href="menu">Menu</a></li>
+              <li class="top-menu_item"><a href="events">Events</a></li>
+              <li class="top-menu_item"><a href="contacts">Contacts</a></li>
+            </ul>
+          </nav>
         </div>
+        <div class="container home_container-center">
+          <div class="time_work">Пн - Пт: 8 - 22, Сб - Вс: 9 - 24</div>
+          <div class="home_text">
+            <h6>RESTORANT</h6>
+            <h1>GOLDEN EGG</h1>
+            <div class="home_btns">
+              <a href="#order" class="btn_order">Order</a>
+              <a href="#about">About</a>
+            </div>
+            <a href="#about " class="arrow_about">
+              <svg>
+                <use xlink:href="img/sprite-icons.svg#arrow"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="socials">
+            <a href="#" target="_blank">
+              <svg>
+                <use xlink:href="img/sprite-icons.svg#facebook"></use>
+              </svg>
+            </a>
+            <a href="#" target="_blank">
+              <svg>
+                <use xlink:href="img/sprite-icons.svg#twitter"></use>
+              </svg>
+            </a>
+            <a href="#" target="_blank">
+              <svg>
+                <use xlink:href="img/sprite-icons.svg#instagramm"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="about" id="about">
-        <div class="container about_container ">
-            <div class="about_text">
-                <h2>About</h2>
-                <p class="intro">Волшебная атмосфера, безукоризненное обслуживание, изысканный интерьер и, самое главное, богатейший выбор вкуснейших блюд отменного качества – именно эти характеристики привлекают гостей в наш ресторан
-                </p>
-                <p>Официанты этого заведения знают все тонкости приготовления блюд, они подскажут гостям наиболее подходящие для них яства. Тут хорошо знают постоянных клиентов, умело угождая их вкусам.</p>
-                <p>Идеально дополняет ресторан уютная кофейня, находящаяся на первом этаже. Чашечка изумительного кофе и сладости от местного кондитера зарядят вас бодростью и позитивной энергией.</p>
-            </div>
-            <div class="about_img">
-                <img src="img/about-img.jpg" alt="">
-                <div class="circle"></div>
-            </div>
+      <div class="container about_container">
+        <div class="about_text">
+          <h2>About</h2>
+          <p class="intro">
+            Волшебная атмосфера, безукоризненное обслуживание, изысканный
+            интерьер и, самое главное, богатейший выбор вкуснейших блюд
+            отменного качества – именно эти характеристики привлекают гостей в
+            наш ресторан
+          </p>
+          <p>
+            Официанты этого заведения знают все тонкости приготовления блюд,
+            они подскажут гостям наиболее подходящие для них яства. Тут хорошо
+            знают постоянных клиентов, умело угождая их вкусам.
+          </p>
+          <p>
+            Идеально дополняет ресторан уютная кофейня, находящаяся на первом
+            этаже. Чашечка изумительного кофе и сладости от местного кондитера
+            зарядят вас бодростью и позитивной энергией.
+          </p>
         </div>
+        <div class="about_img">
+          <img src="img/about-img.jpg" alt="" />
+          <div class="circle"></div>
+        </div>
+      </div>
     </section>
 
     <section class="team" id="team">
-        <div class="container">
-            <h6>our team</h6>
+      <div class="container">
+        <h6>our team</h6>
+      </div>
+      <div class="container team_container">
+        <div class="team_img">
+          <img src="img/team-img.jpg" alt="" />
+          <div class="circle"></div>
         </div>
-        <div class="container  team_container">
-            <div class="team_img">
-                <img src="img/team-img.jpg" alt="">
-                <div class="circle"></div>
-            </div>
-            <div class="team_text">
-                <h2>chif</h2>
-                <p class="intro">За подбор продуктов и приготовление вкусных  блюд отвечает наш 
-                    высококвалифицированный шеф-повар. Блюда в
-                     его исполнении превращаются в настоящие шедевры. 
-                     Никто не останется равнодушным к такому непревзойденному сочетанию. 
-                </p>
-                <p>Своей работой мы хотим радовать каждого нашего посетителя. Мы гарантируем всем клиентам, что время, проведенное в нашем заведении, будет отличаться особым теплом и изысканным вкусом.</p>
-            </div>
+        <div class="team_text">
+          <h2>chif</h2>
+          <p class="intro">
+            За подбор продуктов и приготовление вкусных блюд отвечает наш
+            высококвалифицированный шеф-повар. Блюда в его исполнении
+            превращаются в настоящие шедевры. Никто не останется равнодушным к
+            такому непревзойденному сочетанию.
+          </p>
+          <p>
+            Своей работой мы хотим радовать каждого нашего посетителя. Мы
+            гарантируем всем клиентам, что время, проведенное в нашем
+            заведении, будет отличаться особым теплом и изысканным вкусом.
+          </p>
         </div>
+      </div>
     </section>
 
     <section class="order" id="order">
-        <div class="container order_container">
-            <div class="order_text">
-                <h2>Order the table</h2>
-                <form action="" class="order_form">
-                    <input type="text" placeholder="Name" required>
-                    <input type="text" placeholder="email" required>
-                    <input type="text" placeholder="phone" required>
-                    <div class="order_select">
-                        <select name="" required id="">
-                            <option value="">Number of people</option>
-                            <option value="1">1</option>
-                            <option value="2-5">2-5</option>
-                            <option value="2-5">5-10</option>
-                            <option value="2-5">10-40</option>
-                            <option value="2-5">40-100</option>
-                        </select>
-                    </div>
-                    <input type="text" class="select" placeholder="Data (day/month)" required>
-                    <div class="order_select">
-                        <select name="" required id="">
-                            <option value="">Time</option>
-                            <option value="10-14">10-14</option>
-                            <option value="14-18">14-18</option>
-                            <option value="18-24">18-24</option>
-                        </select>
-                    </div>
-                    <button type="submit">put order</button>
-                </form>
+      <div class="container order_container">
+        <div class="order_text">
+          <h2>Order the table</h2>
+          <form action="" class="order_form">
+            <input type="text" placeholder="Name" required />
+            <input type="text" placeholder="email" required />
+            <input type="text" placeholder="phone" required />
+            <div class="order_select">
+              <select name="" required id="">
+                <option value="">Number of people</option>
+                <option value="1">1</option>
+                <option value="2-5">2-5</option>
+                <option value="2-5">5-10</option>
+                <option value="2-5">10-40</option>
+                <option value="2-5">40-100</option>
+              </select>
             </div>
-            <div class="order_img">
-                <img src="img/order-img.jpg" alt="">
-                <div class="circle"></div>
+            <input type="text" class="select" placeholder="Data (day/month)" required />
+            <div class="order_select">
+              <select name="" required id="">
+                <option value="">Time</option>
+                <option value="10-14">10-14</option>
+                <option value="14-18">14-18</option>
+                <option value="18-24">18-24</option>
+              </select>
             </div>
-            .
+            <button type="submit">put order</button>
+          </form>
         </div>
-        <div class="order_contacts">
-            Пн - Пт: <strong> 8 - 22</strong>, Сб - Вс: <strong> 9 - 23</strong>, телефон: <a href="tel:+38098 729 13 67">+38098 729 13 67</a> / <a href="tel:+38097 458 78 79">+38097 458 78 79</a>
+        <div class="order_img">
+          <img src="img/order-img.jpg" alt="" />
+          <div class="circle"></div>
         </div>
-
+        .
+      </div>
+      <div class="order_contacts">
+        Пн - Пт: <strong> 8 - 22</strong>, Сб - Вс: <strong> 9 - 23</strong>,
+        телефон: <a href="tel:+38098 729 13 67">+38098 729 13 67</a> /
+        <a href="tel:+38097 458 78 79">+38097 458 78 79</a>
+      </div>
     </section>
 
+    <section class="spec">
+      <div class="container spec_container">
+        <h6>SPEC PROPS</h6>
+      </div>
 
-    </div>
+      <div class="swiper spec_slider">
+        <div class="swiper-wrapper">
+          <!-- first slide -->
+          <div class="swiper-slide spec_slide">
+            <div class="containter spec_slide-container">
+              <div class="spec_img">
+                <img src="img/slide1.jpg" alt="" />
+                <div class="circle"></div>
+              </div>
 
- <script src="js/swiper.js"></script>   
-</body> 
-</html> 
+              <div class="spec_text">
+                <h2>Golden egg</h2>
+                <p class="intro">
+                  Невероятно красивый десерт Пирожное "Golden Egg". 3D
+                  пирожное в форме яйца в гнёздышке.
+                </p>
+                <p>
+                  Узнать, каково золото на вкус, приглашаем в наш ресторан.
+                  Темный бельгийский шоколад, Амаретто, мусс
+                  мята-лемонграсс, центр морковь-маракуйя — удержаться почти
+                  невозможно.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- second slide -->
+          <div class="swiper-slide spec_slide">
+            <div class="containter spec_slide-container">
+              <div class="spec_img">
+                <img src="img/slide2" alt="" />
+                <div class="circle"></div>
+              </div>
+
+              <div class="spec_text">
+                <h2>Duck's stories</h2>
+                <p class="intro">
+                  Утиные ножки здесь маринуют с травами, запекают, а потом
+                  тушат, пока мясо не приобретет нежную текстуру.
+                </p>
+                <p>
+                  У К утке подают красную капусту, томлёную в красном вине,
+                  а также толчёный картофель со шкварками. Фермерскую утиную
+                  грудку обжаривают и подают с соусом демиглас и вишнёвым
+                  кули, а также с нежным картофельным гратеном, запечённым
+                  со сливками, тимьяном и сыром пармезан.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- third slide -->
+          <div class="swiper-slide spec_slide">
+            <div class="containter spec_slide-container">
+              <div class="spec_img">
+                <img src="img/slide1" alt="" />
+                <div class="circle"></div>
+              </div>
+
+              <div class="spec_text">
+                <h2>Golden egg 2</h2>
+                <p class="intro">
+                  Невероятно красивый десерт Пирожное "Golden Egg 2". 3D
+                  пирожное в форме яйца в гнёздышке.
+                </p>
+                <p>
+                  Узнать, каково золото на вкус, приглашаем в наш ресторан.
+                  Темный бельгийский шоколад, Амаретто, мусс
+                  мята-лемонграсс, центр морковь-маракуйя — удержаться почти
+                  невозможно.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- slide end -->
+
+        </div>
+        <div class="swiper-pagination spec_pagination"></div>
+      </div>
+
+    </section>
+  </div>
+
+  <!-- <script src="js/swiper.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8.4.2/swiper.esm.min.js"></script> -->
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
