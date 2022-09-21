@@ -1,13 +1,22 @@
 const swiper = new Swiper('.spec_slider', {
- // Optional parameters
  loop: true,
  speed: 1000,
  pagination: {
    el: '.swiper-pagination',
    clickable: true,
  },
-
 });
+
+const swiperMenue = new Swiper('.menu_slider', {
+  slidesPerView: 2,
+  // slidesPerColumn: 2,
+  grid: { rows:2 }, //альтернатива slidesPerColumn
+  // speed: 1000,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+ });
 
 const tabs = document.querySelector('.tabs');
 const menuSlider = document.querySelectorAll('.menu_slider-block');
