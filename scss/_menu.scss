@@ -1,0 +1,59 @@
+.menu{
+ padding: 70px 0 75px;
+ h2{
+  text-align: center;
+ }
+ &_intro{
+  max-width: 565px;
+  margin: $marginc;
+  text-align: center;
+ }
+}
+.tabs_container{
+ margin: 45px auto 55px;
+ position: relative;
+ height: 60px;
+ max-width: $container;
+ overflow-y: hidden;
+ overflow-x : auto;
+ &::-webkit-scrollbar{
+  height: 8px;
+  background: $tabs;
+ }
+  &::-webkit-scrollbar-thumb{
+   background: $color_yel;
+  }
+ }
+
+.tabs{
+ position: absolute;
+ left: 50%;
+ transform: translatex(-50%);
+ @include flex(center, center);
+ flex-wrap: nowrap;
+ &_item{
+  min-width: 163px;
+  cursor: pointer;
+  padding: 0 10px;
+  transition: .3s;
+  font-size: 12px;
+  font-weight: 700;
+  color: $tabs;
+  height: 47px;
+  text-transform: uppercase;
+  @include flex(center, center);
+  border-right: 1px solid $tabs-opacity;
+  &:hover,
+  &.active{
+   background: $color_yel;
+  }
+  &:last-child{
+   border: none;
+  }
+
+ }
+ &.overflow{
+  left:0;
+  transform: none;
+ }
+}

@@ -1,6 +1,5 @@
 .spec_container{
  position: relative;
- // z-index: 20;
   h6{
   color: $white;
   letter-spacing: .5em;
@@ -14,8 +13,6 @@
  }
 }
 .spec_slide{
- position: relative;
- z-index: 1;
  background: url(../img/bg_slide.jpg) center/cover no-repeat;
  height: 100%;
  padding: 105px 0 95px;
@@ -67,3 +64,4 @@
   background: white;
  }
 }
+

@@ -17,3 +17,15 @@ const swiper = new Swiper('.swiper', {
  //   el: '.swiper-scrollbar',
  // },
 });
+
+window.addEventListener('load', overflowTabs);
+window.addEventListener('resize', overflowTabs);
+
+function overflowTabs(){
+  const outerTabs = document.querySelector('.tabs_container');
+  const innerTabs = document.querySelector('.tabs');
+  innerTabs.offsetWidth > outerTabs.offsetWidth ?
+    innerTabs.classList.add('overflow') : 
+    innerTabs.classList.remove('overflow'); 
+}
+
