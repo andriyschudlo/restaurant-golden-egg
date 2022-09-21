@@ -1,22 +1,30 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.spec_slider', {
  // Optional parameters
  loop: true,
+ speed: 1000,
  pagination: {
    el: '.swiper-pagination',
    clickable: true,
  },
 
- // // Navigation arrows
- // navigation: {
- //   nextEl: '.swiper-button-next',
- //   prevEl: '.swiper-button-prev',
- // },
-
- // // And if we need scrollbar
- // scrollbar: {
- //   el: '.swiper-scrollbar',
- // },
 });
+
+const tabs = document.querySelector('.tabs');
+const menuSlider = document.querySelectorAll('.menu_slider-block');
+
+tabs.addEventListener('click', function(e) {
+  if(e.target.classList.contains('tabs_item')){
+    this.querySelectorAll('.tabs_item').forEach(item => item.classList.remove('active'));
+    e.target.classList.add('active');
+  }
+
+  menuSlider.forEach(slider => slider.classList.remove('show'));
+  const tabIndex = e.target.dataset.tab;
+  const thisSwiper = document.querySelector(tabIndex);
+  thisSwiper.classList.add('show');
+
+});
+
 
 window.addEventListener('load', overflowTabs);
 window.addEventListener('resize', overflowTabs);
