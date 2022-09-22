@@ -11,7 +11,7 @@ const swiperMenue = new Swiper('.menu_slider', {
   slidesPerView: 2,
   // slidesPerColumn: 2,
   grid: { rows:2 }, //альтернатива slidesPerColumn
-  // speed: 1000,
+  speed: 1000,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -28,8 +28,8 @@ tabs.addEventListener('click', function(e) {
   }
 
   menuSlider.forEach(slider => slider.classList.remove('show'));
-  const tabIndex = e.target.dataset.tab;
-  const thisSwiper = document.querySelector(tabIndex);
+  let tabIndex = e.target.dataset.tab;
+  let thisSwiper = document.querySelector(tabIndex);
   thisSwiper.classList.add('show');
 
 });
