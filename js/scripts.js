@@ -11,7 +11,7 @@ const swiperMenue = new Swiper('.menu_slider', {
   slidesPerView: 2,
   // slidesPerColumn: 2,
   grid: { rows:2 }, //альтернатива slidesPerColumn
-  speed: 1000,
+  speed: 500,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,

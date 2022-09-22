@@ -63,19 +63,20 @@
 .menu_sliders{
  position: relative;
  min-width: $container;
- outline: 1px solid red;
  margin: $marginc;
  overflow: hidden;
  height: 460px;
 }
 .menu_slider{
  height: 100%;
-}
-.menu_slider .swiper-slide{
+ .swiper-slide{
+  display: flex;
+  justify-content: center;
   height: 175px;
-  outline: 3px solid blue;
   margin-bottom: 55px;
 }
+}
+
 .menu_slider-block{
  width: 100%;
  height: 100%;
@@ -91,7 +92,6 @@
 .menu_item{
 max-width: 510px;
 @include flex(space-between, center);
-outline: 1px solid red;
 &-img{
  // max-height: 280px;
  width: 260px;
@@ -127,7 +127,6 @@ outline: 1px solid red;
  @include flex(center, center);
  position: absolute;
  width: 10 0%;
- outline: 1px solid red;
  bottom: 0;
  z-index: 2;
  .swiper-pagination-bullet{
