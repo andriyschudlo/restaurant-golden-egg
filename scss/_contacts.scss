@@ -1,1 +1,98 @@
- 
+ .contacts{
+  padding: 50px 0 90px;
+  h2{
+   text-align: center;
+   text-transform: uppercase;
+  }
+  &_intro{
+   text-align: center;
+   min-width: 520px;
+   margin: $marginc;
+   margin-bottom: 40px;
+  }
+ }
+ .contacts_form{
+  @include flex(center, center);
+  input, textarea{
+   width: calc(33.333% - 16px);
+   margin: 0 8px 16px;
+   height: 60px;
+   background: $gray;
+   border: none;
+   padding: 0 20px;
+   font-size: 14px;
+   outline: none;
+   border: 1px solid transparent;
+   &::placeholder{
+    color: &gray-opacity;
+   }
+   &:focus{
+    border: 1px solid $color_yel;
+   }
+  }
+  textarea{
+   width: 100%;
+   height: 120px;
+   padding: 20px;
+   resize: none;
+  }
+ }
+ .contacts_data-submit{
+  @include flex(space-between, center);
+  width: 100%;
+  padding: 0 8px;
+  button{
+   width: 50%;
+   min-width: 580px;
+   background: $color-yel;
+   text-transform: uppercase;
+   height: 60px;
+   border-radius: 5px;
+   border-color: transparent;
+   cursor: pointer;
+   color: $white;
+   font-size: 12px;
+   font-weight: 700;
+   transition: .5s;
+   &:hover{
+    background: darken($color-yel, 10%);
+   }
+  }
+ }
+ .contacts_data{
+  @include flex(space-between, center);
+ }
+ .contacts_data-item{
+  @include flex(flex-start, center);
+  color: $gray-opacity;
+  font-size: 12px;
+  font-weight: 700px;
+  margin-right: 20px;
+  a{
+   color: $gray-opacity;
+  }
+  svg{
+   width: 14px;
+   height: 16px;
+  }
+ }
+ .map{
+  width: 100%;
+  height: 475px;
+  iframe{
+   width: 100%;
+   height: 100%;
+  }
+ }
+ footer{
+  background: #000;
+  text-align: center;
+  padding: 10px;
+  color: $white-oacity;
+  font-size: 12px;
+  a{
+   font-weight: 700;
+   color: $white-oacity;
+   font-size: 15px;
+  }
+ }

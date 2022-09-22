@@ -531,8 +531,46 @@
     <section class="contacts" id="contacts">
       <h2>Contacts</h2>
       <p class="intro contacts_intro">Вы можете оставить нам сообщение через форму ниже, или любым другим, удобным вам способом</p>
-      <form action="" class="container contacts_form"></form>
+      <form action="" class="container contacts_form ">
+        <input type="text" placeholder="Name" required>
+        <input type="text" placeholder="email" required>
+        <input type="text" placeholder="phone" required>
+        <textarea placeholder="Message"></textarea>
+        <div class="contacts_data-submit">
+          <div class="contacts_data">
+            <!-- begin item  -->
+            <div class="contacts_data-item">
+              <svg>
+                <use xlink:href="img/sprite-icons.svg#map"></use>
+              </svg>
+              <span>пр-т. Победы, 105, Мариуполь</span>
+            </div>
+            <!-- end item  -->
+            <!-- begin item  -->
+            <div class="contacts_data-item">
+              <svg>
+                <use xlink:href="img/sprite-icons.svg#phone"></use>
+              </svg>
+              <a href="tel:+38098 729 13 67"> +38098 729 13 67</a>
+            </div>
+            <!-- end item  -->
+            <!-- begin item  -->
+            <div class="contacts_data-item">
+              <svg>
+                <use xlink:href="img/sprite-icons.svg#email"></use>
+              </svg> 
+              <a href="mailto:info@goldenegg.com">&nbsp;  info@goldenegg.com</a>
+            </div>
+            <!-- end item  -->
+          </div>
+          <button type="submit">Send message</button>
+        </div>
+      </form>
     </section>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6214.4523131791175!2d30.52440983810941!3d50.4485047371393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1663859392320!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <footer>&copy; Copyright <a href="google.com">LectorWeb</a>  2021</footer>
 
   </div>
 

@@ -44,7 +44,6 @@ body{
 .wrapper{
     max-width: $wrap;
     margin: $marginc;
-    border: 1px solid red;
 }
 .container{
     max-width: $container;
@@ -67,9 +66,7 @@ svg{
     top: 50%;
     filter: drop-shadow(0px 0px 100px $black-oacity);
 }
-section{
-    border: 3px solid green;
-}
+
 section h2{
     font-family: $kurale;
     font-size: 42px;
