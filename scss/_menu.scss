@@ -43,9 +43,11 @@
   text-transform: uppercase;
   @include flex(center, center);
   border-right: 1px solid $tabs-opacity;
+  transition: .4s ease-out;
   &:hover{
-   background: rgb(225, 223, 132) ;
   
+   background: lighten($color: $color-yel, $amount: 20%) ;
+   
   }
   &.active{
    background: $color_yel;
@@ -115,12 +117,13 @@ max-width: 510px;
 .menu_title{
  display: inline-block;
  border-bottom: 1px solid #000;
+ margin-top: 12px;
 }
 .menu_descr{
- font-size: 12px;
+ font-size: 14px;
  line-height: 14px;
  color: $gray-opacity;
- margin-top: 24px;
+ margin-top: 15px;
 }
 
 .menu_pagination{
