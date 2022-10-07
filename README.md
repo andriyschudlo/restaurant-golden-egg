@@ -1,3 +1,3 @@
 # study layout
 # tech's used: swiper (lockal), svg-sprits
-# vscode, scss,
+# vscode, html, scss, js(swiper steup)
