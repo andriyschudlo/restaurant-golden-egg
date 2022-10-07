@@ -1,2 +1,3 @@
-# lending_lesson_1
-# lending_lesson_1
+# study layout
+# tech's used: swiper (lockal), svg-sprits
+# vscode, scss,
